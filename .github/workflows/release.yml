@@ -33,7 +33,7 @@ jobs:
         run: python -m pytest
 
   build_and_publish_pypi:
-    needs: [python_tests, node_tests]
+    needs: [python_tests]
     if: success()
     runs-on: ubuntu-latest
 
