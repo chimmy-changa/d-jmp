@@ -1,0 +1,10 @@
+*.egg-info/
+.eggs/
+__pycache__/
+build/
+dist/
+.venv/
+.vscode/
+htmlcov/
+.coverage
+jupyter_matlab_proxy/gui/
