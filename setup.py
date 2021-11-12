@@ -16,7 +16,7 @@ long_description = (HERE / "README.md").read_text()
 
 setuptools.setup(
     name="d-jmp",
-    version="0.3.8",
+    version="0.3.9",
     url=config["doc_url"],
     author="The MathWorks, Inc.",
     author_email="jupyter-support@mathworks.com",
