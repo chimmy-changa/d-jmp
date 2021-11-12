@@ -1,4 +1,5 @@
 # Copyright 2020-2021 The MathWorks, Inc.
+
 from setuptools.command.install import install
 import setuptools
 from pathlib import Path
@@ -14,8 +15,8 @@ HERE = Path(__file__).parent.resolve()
 long_description = (HERE / "README.md").read_text()
 
 setuptools.setup(
-    name="jupyter-matlab-proxy",
-    version="0.3.4",
+    name="d-jmp",
+    version="0.3.7",
     url=config["doc_url"],
     author="The MathWorks, Inc.",
     author_email="jupyter-support@mathworks.com",
@@ -47,7 +48,7 @@ setuptools.setup(
         "Programming Language :: Python :: 3.9",
     ],
     python_requires="~=3.6",
-    install_requires=["jupyter-server-proxy", "matlab-desktop-proxy"],
+    install_requires=["jupyter-server-proxy", "d-mdp"],
     tests_require=tests_require,
     extras_require={"dev": ["black", "ruamel.yaml"] + tests_require},
     entry_points={
